@@ -17,7 +17,7 @@ class Money extends Model
     public function Transfer(){
         return $this->belongsTo(Transfer::class);
     }
-    public function Money(){
-        return $this->belongsTo(Money::class);
+    public function WithDraw(){
+        return $this->hasOne(WithDraw::class);
     }
 }

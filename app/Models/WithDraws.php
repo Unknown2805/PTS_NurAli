@@ -13,4 +13,8 @@ class WithDraws extends Model
         'money',
         'money_id'
     ];
+
+    public function Money(){
+        return $this->belongsTo(Money::class);
+    }
 }
