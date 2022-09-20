@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('with_draws', function (Blueprint $table) {
             $table->id();
+            $table->integer('money');
+            $table->integer('money_id');
             $table->timestamps();
         });
     }

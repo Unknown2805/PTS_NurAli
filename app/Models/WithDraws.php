@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class WithDraws extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'money',
+        'money_id'
+    ];
 }

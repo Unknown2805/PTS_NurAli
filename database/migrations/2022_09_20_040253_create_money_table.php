@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('money', function (Blueprint $table) {
             $table->id();
+            $table->integer('qty');
+            $table->integer('transfer_id');
             $table->timestamps();
         });
     }

@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Money extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'qty',
+        'transfer_id'
+    ];
+
+    public function Transfer(){
+        return $this->belongsTo(Transfer::class);
+    }
+    public function Money(){
+        return $this->belongsTo(Money::class);
+    }
 }
